@@ -1,5 +1,3 @@
-@reference 'tailwindcss';
-
 @theme {
   --font-louis: "louis_george_caferegular", sans-serif;
   --font-magilio: "magilioregular", sans-serif;

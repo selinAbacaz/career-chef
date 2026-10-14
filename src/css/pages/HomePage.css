@@ -1,19 +1,19 @@
-@reference 'tailwindcss';
-@import "@themes/fonts.css";
+@reference '../../index.css';
 
 .home-main {
   @apply min-h-screen;
 }
 
 .landing-container {
-  @apply h-screen
+  @apply min-h-screen
   p-2 md:p-0
   w-full md:max-w-[80vw]
   flex flex-col lg:flex-row
   justify-between
   items-center
   mx-auto
-  font-louis;
+  font-louis
+  animate-drop-in;
 }
 
 .landing-box {
@@ -36,9 +36,4 @@
 
 .landing-desc {
   @apply text-2xl;
-}
-
-.button-container {
-  @apply flex
-  gap-5;
 }
