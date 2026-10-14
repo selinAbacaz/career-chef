@@ -26,7 +26,9 @@
       "@data/*": ["./src/data/*"],
       "@pages": ["./src/pages/index.ts"],
       "@components": ["./src/components/index.ts"],
-      "@css/*": ["./src/css/*"]
+      "@css/*": ["./src/css/*"],
+      "@themes/*": ["./src/css/themes/*"],
+      "@assets/*": ["./src/assets/*"]
     }
   },
   "include": ["src"]

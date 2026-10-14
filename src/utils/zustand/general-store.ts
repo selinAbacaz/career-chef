@@ -1,4 +1,4 @@
-import { PAGES } from "@utils/constants";
+import { PAGES } from "../constants";
 import type { JSX } from "react/jsx-runtime";
 import { create } from "zustand";
 

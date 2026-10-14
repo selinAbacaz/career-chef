@@ -1,4 +1,9 @@
+@import "@assets/fonts/LouisGeorgeCafe/stylesheet.css";
+@import "@assets/fonts/magilioFont/stylesheet.css";
+@import "@assets/fonts/milchellaFont/stylesheet.css";
 @import "tailwindcss";
+@import "@themes/fonts.css";
+@import "@themes/animations.css";
 
 :root {
   font-synthesis: none;
@@ -11,5 +16,7 @@ body,
 html {
   margin: 0;
   padding: 0;
+  height: 100vh;
+  width: 100vw;
   overflow-x: hidden;
 }

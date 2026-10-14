@@ -1,113 +1,44 @@
-.box {
-    width: 100%;
-    min-height: 100%;
-    border: white 3px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+@reference 'tailwindcss';
+@import "@themes/fonts.css";
 
-
+.home-main {
+  @apply min-h-screen;
 }
 
-.buttonBox1 {
-  width: 100%;
-  height: 100%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #fa8072;
-  box-shadow: #e36c6c 5px 5px;
-  border-radius: 10px;
-  transition: background-color 1s ease-out 2ms;
-  transition: 0.5s;
-
+.landing-container {
+  @apply h-screen
+  p-2 md:p-0
+  w-full md:max-w-[80vw]
+  flex flex-col lg:flex-row
+  justify-between
+  items-center
+  mx-auto
+  font-louis;
 }
 
-.buttonBox1:hover {
-  background-color: rgb(255, 98, 80);
-  transform: translateY(-5px);
+.landing-box {
+  @apply flex flex-col
+  gap-5
+  bg-[#855440c2]
+  text-[#f9e0d1]
+  rounded-md
+  p-10;
+  box-shadow: 5px 10px #5d3627;
 }
 
-.buttonBox2 {
-  width: 100%;
-  min-height: 100%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #FE8A2E;
-  box-shadow: #d56203 5px 5px;
-  border-radius: 10px;
-  transition: background-color 1s ease-out 2ms;
-  transition: 0.5s;
-
+.landing-title {
+  @apply text-7xl font-magilio;
 }
 
-.buttonBox2:hover {
-  background-color: #f76f00;
-  transform: translateY(-5px);
+.landing-typewriter {
+  @apply text-5xl;
 }
 
-
-.HPImageBox{
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  
-  background: #ffaf6e url("../../assets/images/homepagePic.png"); /* Solid color background with image of me */
-  background-size: cover; /* this means it covers the entire container */
-
+.landing-desc {
+  @apply text-2xl;
 }
 
-.backgrColor{
-  background-image: url("../../assets/images/backg.jpg"); /*background image */
-  background-size: cover;
+.button-container {
+  @apply flex
+  gap-5;
 }
-
-.LouisGeorgeNormal {
-  font-family: 'louis_george_caferegular', Arial, sans-serif;
-  font-weight:normal;
-  font-style:normal;
-}
-
-.magilio {
-  font-family: "magilioregular", Arial, sans-serif;
-  font-weight:normal;
-  font-style:normal;
-}
-
-
-.milchella{
-  font-family: 'milchellaregular', Arial, sans-serif;
-  font-weight: normal;
-  font-style:normal;
-
-}
-
-.orangeWithWorm {
-  background-color:#ff9747b9;
-  background-image: url("../../assets/images/careerWorm.png");
-  background-size: cover;
-}
-
-.orangeBun {
-  /* bun is short for bunny- also cuter ! */
-  background-color: #ff9747b9;
-  background-image: url("../../assets/images/careerBun.png");
-  background-size: cover;
-}
- 
-.HP-lower {
-
-  background: #b56f53; /* note: Solid color background used for more-infromation boxes*/
-  background-size: cover; /* BG Cover the entire container */
-
-}
-
