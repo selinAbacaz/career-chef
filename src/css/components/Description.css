@@ -1,0 +1,65 @@
+@reference "@indexcss";
+
+.description-container {
+  @apply flex
+  flex-col
+  gap-15;
+}
+
+.description-heading {
+  @apply text-3xl lg:text-5xl xl:text-7xl
+  py-5
+  px-2
+  rounded-md
+  shadow-md
+  text-center
+  text-white
+  font-bold
+  font-magilio
+  tracking-wider
+  bg-app-primary
+  underline underline-offset-8;
+}
+
+.more-info-container {
+  @apply bg-[#b56f53b2]
+  rounded-md
+  shadow-md
+  flex
+  flex-wrap
+  p-5
+  gap-5;
+}
+
+.info-box {
+  @apply flex-1
+  py-4
+  px-4
+  min-w-full lg:min-w-lg
+  bg-[#c9885f]
+  text-[#916448]
+  rounded-md
+  shadow-md
+  font-bold;
+}
+
+.info-header {
+  @apply text-center
+  font-magilio
+  text-2xl md:text-4xl
+  underline underline-offset-4;
+}
+
+.info-text {
+  @apply max-w-full md:max-w-[60%] 
+  m-auto
+  text-lg md:text-3xl
+  font-louis
+  not-md:text-center
+  text-[#f9e0d1];
+}
+
+.info-tip {
+  @apply text-[#916448] 
+  underline;
+}
