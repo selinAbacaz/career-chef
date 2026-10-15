@@ -29,10 +29,7 @@ export function Footer() {
           ))}
         </div>
       </div>
-      <div
-        className="footer-names-section"
-        style={{ backgroundColor: "salmon" }}
-      >
+      <div className="footer-names-section">
         <span>
           Career Chef was developed by: Selin Bacaz, Nathan Rowell, and Brandon
           Nauta.
