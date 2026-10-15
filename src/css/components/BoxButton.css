@@ -9,5 +9,7 @@
   rounded-md
   text-white
   hover:scale-103 hover:cursor-pointer
-  duration-75;
+  duration-75
+  text-wrap
+  p-1;
 }

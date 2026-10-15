@@ -4,6 +4,13 @@ import bunny from "@assets/images/career-bunnny.png";
 import worm from "@assets/images/career-worm.png";
 import "@css/components/HomeButtons.css";
 
+const boxes = [
+  <BoxButton className="box-button-1">Basic Questions</BoxButton>,
+  <div className="image-boxes" style={{ backgroundImage: `url(${bunny})` }} />,
+  <BoxButton className="box-button-2">Detailed Questions</BoxButton>,
+  <div className="image-boxes" style={{ backgroundImage: `url(${worm})` }} />,
+];
+
 export function HomeButtons() {
   return (
     <div className="buttons-container">
@@ -12,21 +19,9 @@ export function HomeButtons() {
         style={{ backgroundImage: `url(${careerChefArt})` }}
       />
       <div className="buttons-inner-grid">
-        <div>
-          <BoxButton className="box-button-1">Basic Questions</BoxButton>
-        </div>
-        <div
-          className="image-boxes"
-          style={{ backgroundImage: `url(${bunny})` }}
-        />
-
-        <div>
-          <BoxButton className="box-button-2">Detailed Questions</BoxButton>
-        </div>
-        <div
-          className="image-boxes"
-          style={{ backgroundImage: `url(${worm})` }}
-        />
+        {boxes.map((box) => (
+          <div className="boxes">{box}</div>
+        ))}
       </div>
     </div>
   );
