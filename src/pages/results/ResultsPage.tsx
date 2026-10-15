@@ -11,6 +11,7 @@
 // import ErrorMessage from "./components/ErrorMessage";
 
 export function ResultsPage() {
+  return null;
   // const [overviewBasic, setOverviewBasic] = useState<string>(saveResponses.saveOverviewBasic); // Contains the general overview chatGPT returns for the basic questions
   // const [industriesBasic, setIndustriesBasic] = useState<string>(saveResponses.saveIndustriesBasic); // Contains the list of industries chatGPT returns for the basic questions
   // const [overviewDetailed, setOverviewDetailed] = useState<string>(saveResponses.saveOverviewDetailed); // Contains the general overview chatGPT returns for the detailed questions

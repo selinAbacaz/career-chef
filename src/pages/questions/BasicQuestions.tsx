@@ -127,6 +127,7 @@
 // }
 
 export function BasicQuestions() {
+  return null;
   // // Contains the number of questions that have been anwered
   // const [numQuestionsAnswered, setNumQuestionsAnswered] = useState<number>(basicAnswerArray.reduce((totalAnswered: number, answer: string) => answer !== "" ? totalAnswered + 1 : totalAnswered, 0));
   // const [submitted, setSubmittedAnswers] = useState<boolean>(false); // Determines whether or not the results have been submitted

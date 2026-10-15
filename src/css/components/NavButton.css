@@ -1,0 +1,17 @@
+@reference '@indexcss';
+
+.nav-button {
+  @apply text-xl
+  font-louis
+
+  rounded-md
+  py-0.5
+  px-3
+  hover:font-bold hover:scale-105 hover:cursor-pointer hover:text-black;
+}
+
+.selected {
+  @apply text-app-primary
+  border-2
+  font-bold;
+}

@@ -1,4 +1,5 @@
 import { useGeneralStore } from "@utils/zustand/general-store";
+import { Nav } from "@components";
 import mainBg from "@assets/images/main-bg.jpg";
 import "./App.css";
 
@@ -12,10 +13,11 @@ function App() {
   // const [validKey, setValidKey] = useState<boolean>(keyData !== ""); // Determines wether or not the key the user submitted is valid
   // const [submittedNewKey, setSubmittedNewKey] = useState<boolean>(userSubmmittedNewKey); // Checks to see if the user has submitted a key at least once in a session
 
-  const Page = useGeneralStore((state) => state.currentPage);
+  const Page = useGeneralStore((state) => state.currentElement);
 
   return (
     <main className="pb-5" style={{ backgroundImage: `url(${mainBg})` }}>
+      <Nav />
       <Page />
     </main>
   );

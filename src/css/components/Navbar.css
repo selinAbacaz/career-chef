@@ -1,0 +1,28 @@
+@reference '@indexcss';
+
+.chef-nav {
+  @apply fixed 
+  flex
+  justify-between
+  items-center
+  border-b 
+  bg-white/50 
+  backdrop-blur-sm 
+  border-gray-300 
+  w-full
+  h-fit
+  shadow-md 
+  z-10
+  py-2
+  px-5;
+}
+
+.nav-title {
+  @apply font-magilio 
+  text-[40px];
+}
+
+.nav-items {
+  @apply flex
+  gap-6;
+}

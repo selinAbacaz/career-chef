@@ -80,6 +80,7 @@
 // }
 
 export function DetailedQuestions() {
+  return null;
   // // Contains the combined questions from either baisc/detailed questions
   // const [numQuestionsAnswered, setNumQuestionsAnswered] = useState<number>(detailedAnswerArray.reduce((totalAnswered: number, answer: string) => answer !== "" ? totalAnswered + 1 : totalAnswered, 0));
   // const [submitted, setSubmittedAnswers] = useState<boolean>(false); // Determines whether or not the results have been submitted
