@@ -1,4 +1,4 @@
-@reference '../../index.css';
+@reference "@indexcss";
 
 .home-main {
   @apply min-h-screen;
@@ -8,54 +8,4 @@
   @apply p-2 md:p-0
   w-full md:max-w-[80vw]
   mx-auto;
-}
-
-.landing-container {
-  @apply min-h-screen
-  flex flex-col lg:flex-row
-  justify-between
-  items-center
-  font-louis
-  animate-drop-in
-  mb-100;
-}
-
-.landing-box {
-  @apply flex flex-col
-  gap-5
-  bg-app-primary
-  text-app-secondary
-  rounded-md
-  p-10;
-  box-shadow: 5px 10px #5d3627;
-}
-
-.landing-title {
-  @apply text-7xl font-magilio;
-}
-
-.landing-typewriter {
-  @apply text-5xl;
-}
-
-.landing-desc {
-  @apply text-2xl;
-}
-
-.buttons-container {
-  @apply grid
-  grid-cols-3;
-}
-
-.buttons-image {
-  @apply h-[40rem] 
-  w-[45rem]
-  justify-self-end
-  bg-[#ffaf6e]
-  rounded-md
-  shadow-md;
-}
-
-.buttons-box {
-  @apply flex flex-col;
 }

@@ -28,7 +28,8 @@
       "@components": ["./src/components/index.ts"],
       "@css/*": ["./src/css/*"],
       "@themes/*": ["./src/css/themes/*"],
-      "@assets/*": ["./src/assets/*"]
+      "@assets/*": ["./src/assets/*"],
+      "@indexcss": ["./src/index.css"]
     }
   },
   "include": ["src"]

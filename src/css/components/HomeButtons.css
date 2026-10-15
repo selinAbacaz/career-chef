@@ -1,0 +1,35 @@
+@reference "@indexcss";
+
+.buttons-container {
+  @apply grid
+  grid-cols-2
+  gap-10;
+}
+
+.buttons-image {
+  @apply h-[40rem] 
+  w-[45rem]
+  justify-self-end
+  bg-[#ffaf6e]
+  rounded-md
+  shadow-md;
+}
+
+.buttons-inner-grid {
+  @apply grid 
+  grid-cols-2 
+  gap-4;
+}
+
+.box-button-1 {
+  @apply bg-[#fa8072];
+}
+
+.box-button-2 {
+  @apply bg-[#fe8a2e];
+}
+
+.image-boxes {
+  @apply bg-[#ff9747b9]
+  rounded-md;
+}
