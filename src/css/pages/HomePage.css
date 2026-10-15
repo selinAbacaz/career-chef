@@ -1,7 +1,7 @@
 @reference "@indexcss";
 
 .home-main {
-  @apply min-h-screen;
+  @apply min-h-screen mb-5;
 }
 
 .home-section {

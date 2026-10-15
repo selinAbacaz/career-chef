@@ -1,0 +1,45 @@
+@reference "@indexcss";
+
+.footer-main {
+  @apply text-white;
+}
+
+.footer-icon-section {
+  @apply flex 
+  flex-col 
+  gap-2 
+  justify-center 
+  items-center 
+  p-5
+  bg-[#916448];
+}
+
+.icon-section-title {
+  @apply text-xl 
+  font-magilio;
+}
+
+.icons-container {
+  @apply flex 
+  gap-5;
+}
+
+.link {
+  @apply hover:scale-120 
+  duration-75;
+}
+
+.icon {
+  @apply h-6 
+  w-6;
+}
+
+.footer-names-section {
+  @apply flex
+  flex-col
+  justify-center
+  items-center
+  text-center
+  text-lg
+  font-louis;
+}
