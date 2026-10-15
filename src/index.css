@@ -4,6 +4,7 @@
 @import "@assets/fonts/milchellaFont/stylesheet.css";
 @import "@themes/fonts.css";
 @import "@themes/animations.css";
+@import "@themes/colors.css";
 
 body,
 html {

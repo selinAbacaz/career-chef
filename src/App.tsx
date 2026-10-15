@@ -1,5 +1,4 @@
 import { useGeneralStore } from "@utils/zustand/general-store";
-import { BackgroundImage } from "@mantine/core";
 import mainBg from "@assets/images/main-bg.jpg";
 import "./App.css";
 
@@ -16,10 +15,8 @@ function App() {
   const Page = useGeneralStore((state) => state.currentPage);
 
   return (
-    <main>
-      <BackgroundImage src={mainBg}>
-        <Page />
-      </BackgroundImage>
+    <main className="pb-5" style={{ backgroundImage: `url(${mainBg})` }}>
+      <Page />
     </main>
   );
 }

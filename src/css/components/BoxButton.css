@@ -1,0 +1,13 @@
+@reference "../../index.css";
+
+.box-button-format {
+  @apply text-center 
+  h-full 
+  w-full
+  text-4xl
+  font-louis
+  rounded-md
+  text-white
+  hover:scale-103 hover:cursor-pointer
+  duration-75;
+}
