@@ -7,8 +7,11 @@
   w-full;
 }
 
-.bq-section {
+.banner-section {
   @apply w-full 
+  min-h-fit
+  px-5
+  py-2
   h-[45vh] 
   bg-cover 
   bg-position-[100%] 
@@ -23,13 +26,14 @@
 
 .banner-boxes {
   @apply bg-[#fa8072b9] 
-  p-5 
+  p-1 md:p-5 
   font-magilio 
   border-4 
   border-[#f8f8f89a] 
   rounded-md 
   shadow-md 
-  text-white;
+  text-white
+  text-sm md:text-xl lg:text-2xl;
 }
 
 .questions-form {

@@ -8,7 +8,7 @@ function App() {
 
   return (
     <main
-      className="min-h-screen flex flex-col"
+      className="min-h-screen flex flex-col gap-10"
       style={{ backgroundImage: `url(${mainBg})` }}
     >
       <Nav />

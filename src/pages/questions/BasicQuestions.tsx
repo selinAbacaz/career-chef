@@ -15,7 +15,7 @@ export function BasicQuestions() {
   return (
     <div className="questions-main">
       <section
-        className="bq-section"
+        className="banner-section"
         style={{ backgroundImage: `url(${banner})` }}
       >
         {bqBannerWords.map((word) => (
