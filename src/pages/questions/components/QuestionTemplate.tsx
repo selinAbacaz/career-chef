@@ -19,7 +19,11 @@ export function QuestionTemplate({
   return (
     <form onSubmit={form.onSubmit(updateBasicQAs)} className="question-form">
       {questionElements.map((element) => element)}
-      <Button type="submit">Submit</Button>
+      <div>
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
+      </div>
     </form>
   );
 }

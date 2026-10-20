@@ -1,0 +1,15 @@
+@reference "@indexcss";
+
+.button {
+  &[data-variant="primary"] {
+    @apply bg-app-secondary
+    text-app-accent
+    border border-app-accent
+    font-louis;
+
+    &:hover {
+      @apply bg-[#f8ceb4]
+      text-app-accent;
+    }
+  }
+}
