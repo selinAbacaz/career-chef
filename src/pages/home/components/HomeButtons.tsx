@@ -16,7 +16,10 @@ export function HomeButtons() {
       className="image-boxes"
       style={{ backgroundImage: `url(${bunny})` }}
     />,
-    <BoxButton className="box-button-2" onClick={() => setCurrentPage("basic")}>
+    <BoxButton
+      className="box-button-2"
+      onClick={() => setCurrentPage("detailed")}
+    >
       Detailed Questions
     </BoxButton>,
     <div className="image-boxes" style={{ backgroundImage: `url(${worm})` }} />,

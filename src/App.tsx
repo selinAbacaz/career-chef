@@ -7,12 +7,9 @@ function App() {
   const Page = useGeneralStore((state) => state.currentElement);
 
   return (
-    <main
-      className="min-h-screen flex flex-col gap-10"
-      style={{ backgroundImage: `url(${mainBg})` }}
-    >
+    <main className="app-main" style={{ backgroundImage: `url(${mainBg})` }}>
       <Nav />
-      <div className="flex-1">
+      <div className="app-page">
         <Page />
       </div>
       <Footer />

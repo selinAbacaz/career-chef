@@ -1,9 +1,9 @@
 import { useGeneralStore } from "@utils/zustand/general-store";
-import "@css/components/Navbar.css";
 import { PAGES } from "@utils/constants";
 import { NavButton } from "./NavButton";
 import { Burger, Menu } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import "@css/components/Navbar.css";
 
 export function Nav() {
   const currentPage = useGeneralStore((state) => state.currentPage);

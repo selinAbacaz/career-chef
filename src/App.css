@@ -1,1 +1,12 @@
+@reference "@indexcss";
 
+.app-main {
+  @apply min-h-screen 
+  flex 
+  flex-col 
+  gap-10;
+}
+
+.app-page {
+  @apply flex-1;
+}
