@@ -31,11 +31,7 @@ export function HomeButtons() {
         className="buttons-image"
         style={{ backgroundImage: `url(${careerChefArt})` }}
       />
-      <div className="buttons-inner-grid">
-        {boxes.map((box) => (
-          <div className="boxes">{box}</div>
-        ))}
-      </div>
+      <div className="buttons-inner-grid">{boxes.map((box) => box)}</div>
     </div>
   );
 }

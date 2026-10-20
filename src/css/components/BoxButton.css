@@ -1,9 +1,7 @@
-@reference "../../index.css";
+@reference "@indexcss";
 
 .box-button-format {
   @apply text-center 
-  h-full 
-  w-full
   text-4xl
   font-louis
   rounded-md
