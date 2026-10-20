@@ -39,14 +39,36 @@ export const basicQuestions: Question[] = [
     text: "On a scale of 1-10, how much do you like working with technology?",
     defaultAnswer: 0,
     type: "slider",
-    props: { max: 10 },
+    props: {
+      min: 1,
+      max: 10,
+      marks: [
+        { value: 1, label: "1" },
+        { value: 2, label: "2" },
+        { value: 4, label: "4" },
+        { value: 6, label: "6" },
+        { value: 8, label: "8" },
+        { value: 10, label: "10" },
+      ],
+    },
   },
   {
     id: "bq6",
     text: "On a scale of 1-10, how much do you enjoy doing art?",
     defaultAnswer: 0,
     type: "slider",
-    props: { max: 10 },
+    props: {
+      min: 1,
+      max: 10,
+      marks: [
+        { value: 1, label: "1" },
+        { value: 2, label: "2" },
+        { value: 4, label: "4" },
+        { value: 6, label: "6" },
+        { value: 8, label: "8" },
+        { value: 10, label: "10" },
+      ],
+    },
   },
   {
     id: "bq7",

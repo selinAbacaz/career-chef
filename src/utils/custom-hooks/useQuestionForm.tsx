@@ -5,12 +5,12 @@ import {
   Slider,
   Stack,
   TextInput,
-  Text,
 } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { useQuestionStore } from "@utils/zustand/question-store";
 import type { Question } from "../interfaces/question-types";
 import type { JSX } from "react";
+import "@css/components/QuestionTemplate.css";
 
 export function useQuestionForm(questions: Question[]) {
   const basicQAs = useQuestionStore((state) => state.basicQAs);
@@ -22,16 +22,19 @@ export function useQuestionForm(questions: Question[]) {
 
   const elements: JSX.Element[] = [];
 
-  for (const question of questions) {
+  for (const [index, question] of questions.entries()) {
     let newElement: JSX.Element | null = null;
     const stateVarName = question.id;
+
+    const label = (
+      <div className="question-labels">{`Question ${index + 1}: ${question.text}`}</div>
+    );
 
     switch (question.type) {
       case "input":
         newElement = (
           <TextInput
             {...question.props}
-            label={question.text}
             key={form.key(stateVarName)}
             {...form.getInputProps(stateVarName)}
           />
@@ -39,23 +42,17 @@ export function useQuestionForm(questions: Question[]) {
         break;
       case "slider":
         newElement = (
-          <Stack>
-            <Text size="sm" fw={500}>
-              {question.text}
-            </Text>
-            <Slider
-              {...question.props}
-              key={form.key(stateVarName)}
-              {...form.getInputProps(stateVarName)}
-            />
-          </Stack>
+          <Slider
+            {...question.props}
+            key={form.key(stateVarName)}
+            {...form.getInputProps(stateVarName)}
+          />
         );
         break;
       case "radio":
         newElement = (
           <RadioGroup
             {...question.props}
-            label={question.text}
             key={form.key(stateVarName)}
             {...form.getInputProps(stateVarName)}
           >
@@ -71,7 +68,15 @@ export function useQuestionForm(questions: Question[]) {
         break;
     }
 
-    if (newElement) elements.push(newElement);
+    if (newElement) {
+      const wrappedElement = (
+        <Stack>
+          {label}
+          {newElement}
+        </Stack>
+      );
+      elements.push(wrappedElement);
+    }
   }
 
   return { elements, form };

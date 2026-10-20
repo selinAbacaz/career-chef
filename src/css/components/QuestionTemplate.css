@@ -11,3 +11,10 @@
   flex-col
   gap-20;
 }
+
+.question-labels {
+  @apply text-[salmon]
+  font-semibold
+  text-xl
+  font-louis;
+}

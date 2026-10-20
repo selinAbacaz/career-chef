@@ -17,10 +17,7 @@ export function QuestionTemplate({
   const updateBasicQAs = useQuestionStore((state) => state.updateBasicQAs);
 
   return (
-    <form
-      onSubmit={form.onSubmit(updateBasicQAs)}
-      className="mt-30 question-form"
-    >
+    <form onSubmit={form.onSubmit(updateBasicQAs)} className="question-form">
       {questionElements.map((element) => element)}
       <Button type="submit">Submit</Button>
     </form>

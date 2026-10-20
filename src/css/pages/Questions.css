@@ -1,6 +1,39 @@
 @reference "@indexcss";
 
 .questions-main {
-  @apply max-w-7xl
+  @apply flex 
+  flex-col 
+  gap-5 
+  w-full;
+}
+
+.bq-section {
+  @apply w-full 
+  h-[45vh] 
+  bg-cover 
+  bg-position-[100%] 
+  bg-no-repeat 
+  flex 
+  justify-center 
+  items-center 
+  gap-50 
+  bg-[#ffb180] 
+  text-2xl;
+}
+
+.banner-boxes {
+  @apply bg-[#fa8072b9] 
+  p-5 
+  font-magilio 
+  border-4 
+  border-[#f8f8f89a] 
+  rounded-md 
+  shadow-md 
+  text-white;
+}
+
+.questions-form {
+  @apply max-w-7xl 
+  w-full
   mx-auto;
 }
