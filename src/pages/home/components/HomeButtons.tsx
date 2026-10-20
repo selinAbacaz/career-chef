@@ -8,30 +8,34 @@ import { useGeneralStore } from "@utils/zustand/general-store";
 export function HomeButtons() {
   const setCurrentPage = useGeneralStore((state) => state.setCurrentPage);
 
-  const boxes = [
-    <BoxButton onClick={() => setCurrentPage("basic")} className="box-button-1">
-      Basic Questions
-    </BoxButton>,
-    <div
-      className="image-boxes"
-      style={{ backgroundImage: `url(${bunny})` }}
-    />,
-    <BoxButton
-      className="box-button-2"
-      onClick={() => setCurrentPage("detailed")}
-    >
-      Detailed Questions
-    </BoxButton>,
-    <div className="image-boxes" style={{ backgroundImage: `url(${worm})` }} />,
-  ];
-
   return (
     <div className="buttons-container">
       <div
         className="buttons-image"
         style={{ backgroundImage: `url(${careerChefArt})` }}
       />
-      <div className="buttons-inner-grid">{boxes.map((box) => box)}</div>
+      <div className="buttons-inner-grid">
+        <BoxButton
+          onClick={() => setCurrentPage("basic")}
+          className="box-button-1"
+        >
+          Basic Questions
+        </BoxButton>
+        <div
+          className="image-boxes"
+          style={{ backgroundImage: `url(${bunny})` }}
+        />
+        <BoxButton
+          className="box-button-2"
+          onClick={() => setCurrentPage("detailed")}
+        >
+          Detailed Questions
+        </BoxButton>
+        <div
+          className="image-boxes"
+          style={{ backgroundImage: `url(${worm})` }}
+        />
+      </div>
     </div>
   );
 }

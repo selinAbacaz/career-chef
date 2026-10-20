@@ -3,13 +3,17 @@ import { HomeButtons } from "./components/HomeButtons";
 import { Description } from "./components/Description";
 import "@css/pages/HomePage.css";
 
-const sections = [Landing, HomeButtons, Description];
+const sections = [
+  { id: "home-landing", Section: Landing },
+  { id: "home-buttons", Section: HomeButtons },
+  { id: "home-desc", Section: Description },
+];
 
 export function HomePage() {
   return (
     <div className="home-main">
-      {sections.map((Section) => (
-        <section className="home-section">
+      {sections.map(({ id, Section }) => (
+        <section key={id} className="home-section">
           <Section />
         </section>
       ))}

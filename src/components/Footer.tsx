@@ -5,12 +5,18 @@ import footerWorm from "@assets/images/tiny-worm.png";
 import "@css/components/Footer.css";
 
 const links = [
-  { url: "https://github.com/selinAbacaz/career-chef", icon: gitHubLogo },
   {
+    id: "footer-gh",
+    url: "https://github.com/selinAbacaz/career-chef",
+    icon: gitHubLogo,
+  },
+  {
+    id: "footer-yt",
     url: "https://www.youtube.com/watch?v=coaN2VBNgYA&ab_channel=Brisses",
     icon: youtubeLogo,
   },
   {
+    id: "footer-google",
     url: "https://www.google.com/search?q=shrimp+fried+rice+meme&sca_esv=a0ffaebd0ed0b666&sca_upv=1&rlz=1C1VDKB_enUS981US981&ei=L_s6ZsGIMKLj5NoP352BmAg&ved=0ahUKEwiB3Lfal_2FAxWiMVkFHd9OAIMQ4dUDCBA&uact=5&oq=shrimp+fried+rice+meme&gs_lp=Egxnd3Mtd2l6LXNlcnAiFnNocmltcCBmcmllZCByaWNlIG1lbWUyCxAAGIAEGJECGIoFMgUQABiABDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjOC1CEBFiqCnABeAGQAQCYAVigAf4CqgEBNbgBA8gBAPgBAZgCBqACmgPCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICBRAuGIAEwgIHEAAYgAQYCsICCxAAGIAEGIYDGIoFmAMAiAYBkAYKkgcBNqAHvSA&sclient=gws-wiz-serp",
     icon: googleLogo,
   },
@@ -23,7 +29,7 @@ export function Footer() {
         <span className="icon-section-title">Get connected!</span>
         <div className="icons-container">
           {links.map((link) => (
-            <a target="_blank" href={link.url} className="link">
+            <a key={link.id} target="_blank" href={link.url} className="link">
               <img className="icon" src={link.icon} />
             </a>
           ))}
