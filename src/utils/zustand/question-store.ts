@@ -1,7 +1,6 @@
 import { basicQuestions } from "../questions";
 import { create } from "zustand";
-
-type QuestionAnswers = { [key: string]: string | number };
+import type { QuestionAnswers } from "../interfaces/question-types";
 
 interface QuestionStore {
   basicQAs: QuestionAnswers;

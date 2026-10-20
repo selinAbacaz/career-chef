@@ -29,3 +29,4 @@ export interface RadioQuestion extends BaseQuestion {
 }
 
 export type Question = InputQuestion | SliderQuestion | RadioQuestion;
+export type QuestionAnswers = { [key: string]: string | number };

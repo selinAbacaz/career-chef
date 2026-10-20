@@ -1,4 +1,12 @@
-import { Group, Radio, RadioGroup, Slider, TextInput } from "@mantine/core";
+import {
+  Group,
+  Radio,
+  RadioGroup,
+  Slider,
+  Stack,
+  TextInput,
+  Text,
+} from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { useQuestionStore } from "@utils/zustand/question-store";
 import type { Question } from "../interfaces/question-types";
@@ -31,11 +39,16 @@ export function useQuestionForm(questions: Question[]) {
         break;
       case "slider":
         newElement = (
-          <Slider
-            {...question.props}
-            key={form.key(stateVarName)}
-            {...form.getInputProps(stateVarName)}
-          />
+          <Stack>
+            <Text size="sm" fw={500}>
+              {question.text}
+            </Text>
+            <Slider
+              {...question.props}
+              key={form.key(stateVarName)}
+              {...form.getInputProps(stateVarName)}
+            />
+          </Stack>
         );
         break;
       case "radio":
