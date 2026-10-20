@@ -3,15 +3,14 @@
 .nav-button {
   @apply text-xl
   font-louis
-
   rounded-md
   py-0.5
   px-3
-  hover:font-bold hover:scale-105 hover:cursor-pointer hover:text-black;
+  md:hover:font-bold md:hover:scale-105 hover:cursor-pointer md:hover:text-black;
 }
 
 .selected {
-  @apply text-app-primary
-  border-2
+  @apply md:text-app-primary
+  md:border-2
   font-bold;
 }
