@@ -9,7 +9,6 @@ export default defineConfig({
   resolve: {
     alias: {
       "@utils": path.resolve(import.meta.dirname, "./src/utils"),
-      "@data": path.resolve(import.meta.dirname, "./src/data"),
       "@pages": path.resolve(import.meta.dirname, "./src/pages/index.ts"),
       "@components": path.resolve(
         import.meta.dirname,

@@ -23,7 +23,6 @@
     "noFallthroughCasesInSwitch": true,
     "paths": {
       "@utils/*": ["./src/utils/*"],
-      "@data/*": ["./src/data/*"],
       "@pages": ["./src/pages/index.ts"],
       "@components": ["./src/components/index.ts"],
       "@css/*": ["./src/css/*"],
