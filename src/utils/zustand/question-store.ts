@@ -9,10 +9,9 @@ interface QuestionStore {
   updateDetailedQAs: (newQAs: QuestionAnswers) => void;
 }
 
-let basicQuesitonsDefault: QuestionAnswers = {};
-basicQuestions.forEach(({ id, defaultAnswer }) => {
-  basicQuesitonsDefault = { ...basicQuesitonsDefault, [id]: defaultAnswer };
-});
+const basicQuesitonsDefault: QuestionAnswers = Object.fromEntries(
+  basicQuestions.map(({ id, defaultAnswer }) => [id, defaultAnswer]),
+);
 
 export const useQuestionStore = create<QuestionStore>((set) => ({
   basicQAs: basicQuesitonsDefault,
