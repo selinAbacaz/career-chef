@@ -1,4 +1,3 @@
-import { basicQuestions } from "../questions";
 import { create } from "zustand";
 import type { QuestionAnswers } from "../interfaces/question-types";
 
@@ -9,12 +8,8 @@ interface QuestionStore {
   updateDetailedQAs: (newQAs: QuestionAnswers) => void;
 }
 
-const basicQuesitonsDefault: QuestionAnswers = Object.fromEntries(
-  basicQuestions.map(({ id, defaultAnswer }) => [id, defaultAnswer]),
-);
-
 export const useQuestionStore = create<QuestionStore>((set) => ({
-  basicQAs: basicQuesitonsDefault,
+  basicQAs: {},
   detailedQAs: {},
   updateBasicQAs: (newQAs) => {
     set({ basicQAs: newQAs });

@@ -3,7 +3,7 @@ import { basicQuestions } from "@utils/questions";
 import { QuestionTemplate } from "./components/QuestionTemplate";
 import banner from "@assets/images/question-banner-1.png";
 import "@css/pages/Questions.css";
-import { Progress } from "@mantine/core";
+import { useQuestionStore } from "@utils/zustand/question-store";
 
 const bqBannerWords = [
   "Answer Truthfully and Have Fun !",
@@ -11,8 +11,8 @@ const bqBannerWords = [
 ];
 
 export function BasicQuestions() {
-  const { elements, form, progressNum, progressColor } =
-    useQuestionForm(basicQuestions);
+  const updateBasicQAs = useQuestionStore((state) => state.updateBasicQAs);
+  const { elements, form } = useQuestionForm(basicQuestions);
 
   return (
     <div className="questions-main">
@@ -27,13 +27,11 @@ export function BasicQuestions() {
         ))}
       </section>
       <section className="questions-form">
-        <Progress
-          value={progressNum}
-          color={progressColor}
-          size="xl"
-          animated
+        <QuestionTemplate
+          questionElements={elements}
+          form={form}
+          updateQAs={updateBasicQAs}
         />
-        <QuestionTemplate questionElements={elements} form={form} />
       </section>
     </div>
   );
